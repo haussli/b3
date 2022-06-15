@@ -95,71 +95,72 @@ mframe::mframe( wxWindow* parent, wxWindowID id, const wxString& title, const wx
 	bSizer1 = new wxBoxSizer( wxVERTICAL );
 
 	m_notebook4 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, 0 );
-	m_panel3 = new wxPanel( m_notebook4, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxFULL_REPAINT_ON_RESIZE|wxHSCROLL|wxTAB_TRAVERSAL|wxVSCROLL );
+	m_scrolledWindow5 = new wxScrolledWindow( m_notebook4, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxHSCROLL|wxVSCROLL );
+	m_scrolledWindow5->SetScrollRate( 6, 6 );
 	wxGridBagSizer* gbSizer1;
 	gbSizer1 = new wxGridBagSizer( 0, 0 );
 	gbSizer1->SetFlexibleDirection( wxBOTH );
 	gbSizer1->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 
-	m_staticText1 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText1 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText1->Wrap( -1 );
 	gbSizer1->Add( m_staticText1, wxGBPosition( 0, 0 ), wxGBSpan( 1, 2 ), wxALL, 5 );
 
-	m_staticText2 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText2 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText2->Wrap( -1 );
 	gbSizer1->Add( m_staticText2, wxGBPosition( 1, 0 ), wxGBSpan( 1, 2 ), wxALL, 5 );
 
-	m_staticText5 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText5 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText5->Wrap( -1 );
 	gbSizer1->Add( m_staticText5, wxGBPosition( 2, 0 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_textCtrl1 = new wxTextCtrl( m_panel3, wxID_ANY, _("n"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl1 = new wxTextCtrl( m_scrolledWindow5, wxID_ANY, _("n"), wxDefaultPosition, wxDefaultSize, 0 );
 	gbSizer1->Add( m_textCtrl1, wxGBPosition( 2, 1 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_staticText6 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText6 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText6->Wrap( -1 );
 	gbSizer1->Add( m_staticText6, wxGBPosition( 3, 0 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_textCtrl2 = new wxTextCtrl( m_panel3, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl2 = new wxTextCtrl( m_scrolledWindow5, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	gbSizer1->Add( m_textCtrl2, wxGBPosition( 3, 1 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_staticText7 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText7 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText7->Wrap( -1 );
 	gbSizer1->Add( m_staticText7, wxGBPosition( 4, 0 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_textCtrl3 = new wxTextCtrl( m_panel3, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl3 = new wxTextCtrl( m_scrolledWindow5, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	gbSizer1->Add( m_textCtrl3, wxGBPosition( 4, 1 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_staticText8 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText8 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText8->Wrap( -1 );
 	gbSizer1->Add( m_staticText8, wxGBPosition( 6, 0 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_textCtrl4 = new wxTextCtrl( m_panel3, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl4 = new wxTextCtrl( m_scrolledWindow5, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	gbSizer1->Add( m_textCtrl4, wxGBPosition( 6, 1 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_staticText9 = new wxStaticText( m_panel3, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText9 = new wxStaticText( m_scrolledWindow5, wxID_ANY, _("MyLabel"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText9->Wrap( -1 );
 	m_staticText9->Enable( false );
 
 	gbSizer1->Add( m_staticText9, wxGBPosition( 7, 0 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
-	m_textCtrl5 = new wxTextCtrl( m_panel3, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl5 = new wxTextCtrl( m_scrolledWindow5, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_textCtrl5->Enable( false );
 
 	gbSizer1->Add( m_textCtrl5, wxGBPosition( 7, 1 ), wxGBSpan( 1, 1 ), wxALL, 5 );
 
 
-	m_panel3->SetSizer( gbSizer1 );
-	m_panel3->Layout();
-	gbSizer1->Fit( m_panel3 );
-	m_notebook4->AddPage( m_panel3, _("a page"), false );
+	m_scrolledWindow5->SetSizer( gbSizer1 );
+	m_scrolledWindow5->Layout();
+	gbSizer1->Fit( m_scrolledWindow5 );
+	m_notebook4->AddPage( m_scrolledWindow5, _("a page"), false );
 
 	bSizer1->Add( m_notebook4, 1, wxEXPAND | wxALL, 5 );
 
 
 	this->SetSizer( bSizer1 );
 	this->Layout();
-	wStatusBar = this->CreateStatusBar( 1, 0|wxALWAYS_SHOW_SB|wxHSCROLL|wxVSCROLL, wxID_ANY );
+	wStatusBar = this->CreateStatusBar( 1, 0|wxALWAYS_SHOW_SB, wxID_ANY );
 
 	this->Centre( wxBOTH );
 

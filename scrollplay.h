@@ -22,7 +22,7 @@
 #include <wx/stattext.h>
 #include <wx/textctrl.h>
 #include <wx/gbsizer.h>
-#include <wx/panel.h>
+#include <wx/scrolwin.h>
 #include <wx/notebook.h>
 #include <wx/sizer.h>
 #include <wx/statusbr.h>
@@ -44,7 +44,7 @@ class mframe : public wxFrame
 		wxMenu* mMenuFile;
 		wxMenu* mMenuHelp;
 		wxNotebook* m_notebook4;
-		wxPanel* m_panel3;
+		wxScrolledWindow* m_scrolledWindow5;
 		wxStaticText* m_staticText1;
 		wxStaticText* m_staticText2;
 		wxStaticText* m_staticText5;
