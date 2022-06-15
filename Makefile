@@ -1,13 +1,15 @@
 CPP:=$(shell wx-config --cxx)
 CPP:=clang++
+WXC=wx-config
 
 all: scrollplay.o test.o
-	$(CPP) `wx-config --libs --optional-libs` -o test test.o scrollplay.o
+	$(CPP) `$(WXC) --libs --optional-libs` -o test test.o scrollplay.o
 	
 scrollplay.o: scrollplay.cpp
 test.o: test.cc
 .cpp.o .cc.o:
-	$(CPP) -I. `wx-config --cxxflags` -c $<
+	echo $WXC --cxxflags
+	$(CPP) -I. `$(WXC) --cxxflags` -c $<
 
 clean:
 	rm -f *.o
